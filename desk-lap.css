@@ -11,4 +11,9 @@ MAIN THEME COLORS:
   padding: 0;
   background-color: #93FF19;
   color: #FFFFFF;
+  width: 100%;
+  height: 150px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 150px;
 }
