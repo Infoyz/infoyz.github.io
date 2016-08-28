@@ -13,7 +13,18 @@ MAIN THEME COLORS:
   color: #FFFFFF;
   width: 100%;
   height: 120px;
-  font-size: 30px;
+  font-size: 60px;
   text-align: center;
   line-height: 120px;
+}
+.middle-page-search-bar{
+  position: absolute;
+  width: 320px; /* 300px of content + 10 top and bottom */
+  height: 140; /* 3 lines of content + 10 top and bottom */
+  font-size: 40px;
+  margin: 0;
+  padding: 8px;
+  border: solid 2px #93FF19;
+  background-color: #FFFFFF;
+  color: #93FF19;
 }
