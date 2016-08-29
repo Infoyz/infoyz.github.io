@@ -29,6 +29,7 @@ MAIN THEME COLORS:
   color: #93FF19;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  border-radius: 30px;
 }
 #middle-page-search-bar:focus{
   border: solid 2px #93FF19;
