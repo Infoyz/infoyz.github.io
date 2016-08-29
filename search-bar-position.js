@@ -1,10 +1,11 @@
 var listenerAdded = false;
+var searchId;
 window.addEventListener("load", init, false);
 
 function init(){
   
 window.addEventListener("resize", repositionSearch);
-var searchId = document.getElementById("middle-page-search-bar");
+searchId = document.getElementById("middle-page-search-bar");
 searchId.addEventListener("transitionend", repositionSearch);
 
 if(!listenerAdded){
