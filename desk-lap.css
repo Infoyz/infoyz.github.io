@@ -20,11 +20,17 @@ MAIN THEME COLORS:
 .middle-page-search-bar{
   position: absolute;
   width: 320px; /* 300px of content + 10 top and bottom */
-  height: 140; /* 3 lines of content + 10 top and bottom */
+  height: 60px; /* 1 line of content + 10 top and bottom */
   font-size: 40px;
   margin: 0;
   padding: 8px;
   border: solid 2px #93FF19;
   background-color: #FFFFFF;
   color: #93FF19;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.middle-page-search-bar{
+  border: solid 2px #93FF19;
+  box-shadow: 0 0 10px 0px grey;
 }
