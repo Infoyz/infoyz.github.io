@@ -1,6 +1,6 @@
 window.addEventListener("resize", repositionSearch);
 var searchClass = document.getElementsByClassName("middle-page-search-bar");
-searchClass[0].addEventListener("resize", repositionSearch);
+searchClass[0].addEventListener("transitionend", repositionSearch);
 
 function repositionSearch(){
 
