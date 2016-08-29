@@ -17,7 +17,7 @@ MAIN THEME COLORS:
   text-align: center;
   line-height: 120px;
 }
-.middle-page-search-bar{
+#middle-page-search-bar{
   position: absolute;
   width: 320px; /* 300px of content + 10 top and bottom */
   height: 60px; /* 1 line of content + 10 top and bottom */
@@ -30,7 +30,7 @@ MAIN THEME COLORS:
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.middle-page-search-bar:focus{
+#middle-page-search-bar:focus{
   border: solid 3px #93FF19;
   box-shadow: 0 0 10px 0px grey;
 }
