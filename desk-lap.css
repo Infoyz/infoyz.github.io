@@ -3,7 +3,7 @@ MAIN THEME COLORS:
 1. 93FF19   (Light Green)
 2. FFFFFF   (White)
 */
-.page-header{
+#page-header{
   position: fixed;
   top: 0px;
   left: 0px;
