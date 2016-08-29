@@ -25,6 +25,9 @@ var wWidth = window.innerWidth;
 var wHeight = window.innerHeight;
 var sWidth = searchId.offsetWidth;
 var sHeight = searchId.offsetHeight;
-console.log("window width"+wWidth+"window height"+wHeight+"search width"+sWidth+"search height"+sHeight);
+var hHeight = document.getElementById("page-header").offsetHeight;
+
+searchId.style.left = (wWidth/2)-(sWidth/2);
+searchId.style.top = ((((wHeight-hHeight)/2)-(sHeight/2))+hHeight);
 
 }
