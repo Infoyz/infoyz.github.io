@@ -30,7 +30,7 @@ MAIN THEME COLORS:
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.middle-page-search-bar{
+.middle-page-search-bar:focus{
   border: solid 2px #93FF19;
   box-shadow: 0 0 10px 0px grey;
 }
