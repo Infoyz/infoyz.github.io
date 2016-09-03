@@ -19,7 +19,7 @@ function ProcessRequest()
         
             var info = eval ( "(" + xmlHttp.responseText + ")" );
             
-            console.write(info.jsonData[ 0 ]);
+            console.log(info.jsonData[ 0 ]);
             
     }
 }
