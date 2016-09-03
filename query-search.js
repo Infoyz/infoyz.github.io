@@ -16,12 +16,10 @@ function ProcessRequest()
 {
     if ( xmlHttp.readyState == 4 && xmlHttp.status == 200 ) 
     {
-        if ( xmlHttp.responseText == "Not found" ) 
-        {
+        
             var info = eval ( "(" + xmlHttp.responseText + ")" );
-
-            // No parsing necessary with JSON!        
-            document.write(info.jsonData[ 0 ]);
-        }                    
+            
+            console.write(info.jsonData[ 0 ]);
+            
     }
 }
