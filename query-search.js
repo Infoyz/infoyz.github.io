@@ -1,6 +1,6 @@
 var xmlHttp = null;
 
-function GetCustomerInfo()
+function query()
 {
     //var query = document.getElementById( "middle-page-search-bar" ).value;
     //var url = "infoyz-bkfighter.rhcloud.com" + query;
