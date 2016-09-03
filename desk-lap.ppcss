@@ -1,7 +1,10 @@
 /*
 MAIN THEME COLORS:
 1. 93FF19   (Light Green)
-2. FFFFFF   (White)
+2. 196DFF   (Light Blue)
+3. FFB619   (Light Orange)
+BACKGROUND/ SECONDARY THME COLORS:
+1. FFFFFF   (White)
 */
 #page-header{
   position: fixed;
@@ -9,7 +12,7 @@ MAIN THEME COLORS:
   left: 0px;
   margin: 0;
   padding: 0;
-  background-color: #93FF19;
+  background-color: "+ main +";
   color: #FFFFFF;
   width: 100%;
   height: 120px;
@@ -35,6 +38,6 @@ MAIN THEME COLORS:
   font-family: 'Roboto', sans-serif;
 }
 #middle-page-search-bar:focus{
-  border: solid 2px #93FF19;
+  border: solid 2px "+ main +";
   box-shadow: 0 0 10px 0px grey;
 }
