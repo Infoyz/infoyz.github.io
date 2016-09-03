@@ -28,9 +28,9 @@ BACKGROUND/ SECONDARY THME COLORS:
   font-size: 40px;
   margin: 0;
   padding: 8px;
-  border: solid 2px #93FF19;
+  border: solid 2px "+ main +";
   background-color: #FFFFFF;
-  color: #93FF19;
+  color: "+ main +";
   -webkit-transition: 0.25s;
   transition: 0.25s;
   border-radius: 30px;
