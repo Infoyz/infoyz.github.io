@@ -3,8 +3,8 @@ var xmlHttp = null;
 function query()
 {
     //var query = document.getElementById( "middle-page-search-bar" ).value;
-    //var url = "infoyz-bkfighter.rhcloud.com" + query;
-    var url = "infoyz-bkfighter.rhcloud.com";
+    //var url = "https://infoyz-bkfighter.rhcloud.com" + query;
+    var url = "https://infoyz-bkfighter.rhcloud.com";
 
     xmlHttp = new XMLHttpRequest(); 
     xmlHttp.onreadystatechange = ProcessRequest;
