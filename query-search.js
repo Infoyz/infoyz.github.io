@@ -4,7 +4,7 @@ function query()
 {
     //var query = document.getElementById( "middle-page-search-bar" ).value;
     //var url = "infoyz-bkfighter.rhcloud.com" + query;
-    var url = infoyz-bkfighter.rhcloud.com;
+    var url = "infoyz-bkfighter.rhcloud.com";
 
     xmlHttp = new XMLHttpRequest(); 
     xmlHttp.onreadystatechange = ProcessRequest;
