@@ -19,11 +19,18 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   
   if(isMath){
   
-  var mathResult = eval(search);
-  console.log(mathResult);
+  var mathResult = isMath +" = "+ eval(search);
+  displayMath(mathResult);
   
   }
   
   
   
   }
+
+
+function displayMath(result){
+ 
+    document.getElementById('middle-page-search-bar').value = result;
+    
+}
