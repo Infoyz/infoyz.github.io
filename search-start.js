@@ -1,3 +1,6 @@
+window.addEventListener("load", init, false);
+
+function init(){
 document.getElementById('middle-page-search-bar').onkeypress = function(e){
     if (!e) e = window.event;
     var keyCode = e.keyCode || e.which;
@@ -8,6 +11,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
       return false;
     }
   }
+}
   
   function searchStart(search){
   
