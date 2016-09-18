@@ -21,13 +21,13 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   
   var math = search;
   
-  math.replace('sin','Math.sin');
-  math.replace('cos','Math.cos');
-  math.replace('tan','Math.tan');
-  math.replace('asin','Math.asin');
-  math.replace('acos','Math.acos');
-  math.replace('atan','Math.atan');
-  math.replace('sqrt','Math.sqrt');
+  math = math.replace(/sin/g,'Math.sin');
+  math = math.replace(/cos/g,'Math.cos');
+  math = math.replace(/tan/g,'Math.tan');
+  math = math.replace(/asin/g,'Math.asin');
+  math = math.replace(/acos/g,'Math.acos');
+  math = math.replace(/atan/g,'Math.atan');
+  math = math.replace(/sqrt/g,'Math.sqrt');
   
   var mathResult = search +" = "+ eval(math);
   displayMath(mathResult);
