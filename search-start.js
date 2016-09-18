@@ -19,7 +19,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   
   if(isMath){
   
-  var mathResult = isMath +" = "+ eval(search);
+  var mathResult = search +" = "+ eval(search);
   displayMath(mathResult);
   
   }
