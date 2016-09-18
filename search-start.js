@@ -15,8 +15,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   
   function searchStart(search){
   
-  var isMath = search.replace(/\ .*/,'');
-  isMath = /^[0-9.()*/+'sin''cos''asin''acos''tan''atan''sqrt'-]*$/.test(search);
+  var isMath = /^[0-9.()*/+'sin''cos''asin''acos''tan''atan''sqrt'-]*$/.test(search);
   
   if(isMath){
   
