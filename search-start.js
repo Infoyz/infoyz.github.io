@@ -15,11 +15,21 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   
   function searchStart(search){
   
-  var isMath = /^[0-9.()*/+-]*$/.test(search);
+  var isMath = /^[0-9.()*/+'sin''cos''asin''acos''tan''atan''sqrt'-]*$/.test(search);
   
   if(isMath){
   
-  var mathResult = search +" = "+ eval(search);
+  var math = search;
+  
+  math.replace('sin','Math.sin');
+  math.replace('cos','Math.cos');
+  math.replace('tan','Math.tan');
+  math.replace('asin','Math.asin');
+  math.replace('acos','Math.acos');
+  math.replace('atan','Math.atan');
+  math.replace('sqrt','Math.sqrt');
+  
+  var mathResult = search +" = "+ eval(math);
   displayMath(mathResult);
   
   }
