@@ -1,5 +1,11 @@
 window.addEventListener("load", init, false);
 
+var xmlHttp = null;
+
+
+
+
+
 function init(){
 document.getElementById('middle-page-search-bar').onkeypress = function(e){
     if (!e) e = window.event;
@@ -15,6 +21,11 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   
   function searchStart(search){
   
+  
+  
+  
+  
+  /*     MATH SECTION         MATH SECTION          MATH SECTION                   */
   var isMath = /^[0-9.()*/+'sin''cos''asin''acos''tan''atan''sqrt'-]*$/.test(search);
   
   if(isMath){
@@ -37,6 +48,65 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   displayMath(mathResult);
   
   }
+  
+  
+  
+  
+  
+  
+  
+    /*     DICTIONARY SECTION     DICTIONARY SECTION        DICTIONARY SECTION          */
+  
+  var isDefine = /^['define''definition']*$/.test(search);
+  
+  if(isDefine){
+      
+      var define = search;
+      
+      define = define.replace(/definition/g,');
+      define = define.replace(/define/g,');
+      define = define.replace(/what/g,');
+      define = define.replace(/for/g,');
+      define = define.replace(/is/g,');
+      define = define.replace(/of/g,');
+      define = define.replace(/the/g,');
+      define = define.replace(/word/g,');
+      define = define.replace(/ /g,');
+      
+      dictionaryJSON(define);
+      
+  }
+  
+  
+  function dictionaryJSON(define)
+{
+    var url = "https://owlbot.info/api/v1/dictionary/"+define+"?format=json";
+
+    xmlHttp = new XMLHttpRequest(); 
+    xmlHttp.onreadystatechange = ProcessRequest;
+    xmlHttp.open( "GET", url, true );
+    xmlHttp.send( null );
+}
+
+function ProcessRequest() 
+{
+    if ( xmlHttp.readyState == 4 && xmlHttp.status == 200 ) 
+    {
+        
+            var info = eval ( "(" + xmlHttp.responseText + ")" );
+            
+            console.log(info);
+            
+    }
+}
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
