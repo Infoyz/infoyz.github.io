@@ -71,6 +71,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
       define = define.replace(/of/g,'');
       define = define.replace(/the/g,'');
       define = define.replace(/word/g,'');
+      define = define.replace(/me/g,'');
       define = define.replace(/ /g,'');
       
       dictionaryJSON(define);
