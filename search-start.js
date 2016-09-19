@@ -57,7 +57,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   
     /*     DICTIONARY SECTION     DICTIONARY SECTION        DICTIONARY SECTION          */
   
-  var isDefine = /^['define''definition']*$/.test(search);
+  var isDefine = search.includes('define')|search.includes('definition');
   
   if(isDefine){
       
