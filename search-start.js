@@ -94,7 +94,7 @@ function ProcessRequest()
     {
         
             var info = eval ( "(" + xmlHttp.responseText + ")" );
-            
+            info = info[0];
             console.log(info);
             
     }
