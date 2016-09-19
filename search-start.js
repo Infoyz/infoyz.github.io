@@ -80,7 +80,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   
   function dictionaryJSON(define)
 {
-    var url = "https://owlbot.info/api/v1/dictionary/"+define+"?format=json";
+    var url = "https://crossorigin.me/https://owlbot.info/api/v1/dictionary/"+define+"?format=json";
 
     xmlHttp = new XMLHttpRequest(); 
     xmlHttp.onreadystatechange = ProcessRequest;
