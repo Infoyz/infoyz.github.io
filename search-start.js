@@ -40,9 +40,9 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   math = math.replace(/tan/g,'Math.tan');
   math = math.replace(/sqrt/g,'Math.sqrt');
   
-  math = math.replace(/#/g,'Math.asin');
-  math = math.replace(/##/g,'Math.acos');
   math = math.replace(/###/g,'Math.atan');
+  math = math.replace(/##/g,'Math.acos');
+  math = math.replace(/#/g,'Math.asin');
   
   var mathResult = search +" = "+ eval(math);
   displayMath(mathResult);
