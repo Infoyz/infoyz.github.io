@@ -63,15 +63,15 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
       
       var define = search;
       
-      define = define.replace(/definition/g,');
-      define = define.replace(/define/g,');
-      define = define.replace(/what/g,');
-      define = define.replace(/for/g,');
-      define = define.replace(/is/g,');
-      define = define.replace(/of/g,');
-      define = define.replace(/the/g,');
-      define = define.replace(/word/g,');
-      define = define.replace(/ /g,');
+      define = define.replace(/definition/g,'');
+      define = define.replace(/define/g,'');
+      define = define.replace(/what/g,'');
+      define = define.replace(/for/g,'');
+      define = define.replace(/is/g,'');
+      define = define.replace(/of/g,'');
+      define = define.replace(/the/g,'');
+      define = define.replace(/word/g,'');
+      define = define.replace(/ /g,'');
       
       dictionaryJSON(define);
       
