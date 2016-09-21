@@ -20,6 +20,6 @@ var dispboxes = document.getElementsByClassName('display-boxes');
 
 while(dispboxes[0]) {
     dispboxes[0].parentNode.removeChild(dispboxes[0]);
-}​
+}
 
 }
