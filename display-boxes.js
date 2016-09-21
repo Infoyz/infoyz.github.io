@@ -5,8 +5,8 @@ var boxes = [];
 
 function newBox(){
 
-var randomnum = Math.random();
-var divId = "id"+randomnum.slice(2,16);
+var randomnum = Math.random()*20;
+var divId = "id"+randomnum;
 
 document.createElement(divId);
 boxes.push(divId);
