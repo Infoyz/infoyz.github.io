@@ -1,29 +1,25 @@
-var boxes = [];
 
 
 
 
-function newBox(){
 
-var randomnum = Math.random()*20;
-var divId = "id"+randomnum;
+function newBox(content){
 
-document.createElement(divId);
-boxes.push(divId);
-
-}
-
-
-
-function boxHTML(id,htmlCode){
-
-document.getElementById(id).innerHTML = htmlCode;
+var box = document.createElement("div");
+document.body.appendChild(box);
+box.className = "display-boxes";
+box.innerHTML = content;
 
 }
+
 
 
 function deleteAll(){
 
-boxes = [];
+var dispboxes = document.getElementsByClassName('display-boxes');
+
+while(dispboxes[0]) {
+    dispboxes[0].parentNode.removeChild(dispboxes[0]);
+}​
 
 }
