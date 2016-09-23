@@ -3,12 +3,17 @@
 
 
 
-function newBox(content){
+function newBox(type,content){
 
 var box = document.createElement("div");
 document.body.appendChild(box);
 box.className = "display-boxes";
-box.innerHTML = content;
+
+if(type == 'math'){
+    
+    box.innerHTML = content;
+    
+}
 
 }
 
