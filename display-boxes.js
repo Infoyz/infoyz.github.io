@@ -42,8 +42,8 @@ function updatePositions(){
     
     for var(i=0;i<amount;i++){
         
-        currentBox = dispboxes[i];
-        
+        var currentBox = dispboxes[i];
+        var angle = (i+1)/amount*2*Math.PI;
         
     }
     
