@@ -41,3 +41,14 @@ BACKGROUND/ SECONDARY THME COLORS:
   border: solid 2px "+ main +";
   box-shadow: 0 0 10px 0px grey;
 }
+.display-boxes{
+  position: absolute;
+  width: 480px;
+  height: 240px;
+  border solid 2px "+ main +";
+  background-color: #FFFFFF;
+  border-radius: 15 px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 4px;
+}
