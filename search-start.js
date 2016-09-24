@@ -116,6 +116,6 @@ function ProcessRequest()
 
 function displayMath(result){
  
-    document.getElementById('middle-page-search-bar').value = result;
+    newBox('math',result);
     
 }
