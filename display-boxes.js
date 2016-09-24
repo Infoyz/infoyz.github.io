@@ -44,13 +44,13 @@ function updatePositions(){
         var angle = (i+1)/amount*2*Math.PI;
         
         var firstX = wWidth/2+(Math.cos(angle)*sWidth+middleX)/2;
-        var firstY = Math.sin(angle)*sHeight+middleY;
+        var firstY = (wHeight-hHeight)/2+(Math.sin(angle)*sHeight+middleY)/2+hHeight;
         
         var secondX = wWidth/2+(Math.cos(angle)*wWidth)/2;
-        var secondY = Math.sin(angle)*(wHeight-hHeight)+hHeight;
+        var secondY = (wHeight-hHeight)/2+(Math.sin(angle)*(wHeight-hHeight)+hHeight)/2+hHeight;
         
-        currentBox.style.top = 0-96+(firstY+secondY)/2 + 'px';
-        currentBox.style.left = 0-96+(firstX+secondX)/2 + 'px';
+        currentBox.style.top = 0-144+(firstY+secondY)/2 + 'px';
+        currentBox.style.left = 0-144+(firstX+secondX)/2 + 'px';
         
     }
     
