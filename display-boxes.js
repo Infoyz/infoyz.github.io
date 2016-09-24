@@ -38,7 +38,7 @@ function updatePositions(){
     var middleY = ((((wHeight-hHeight)/2)-(sHeight/2))+hHeight);
 
     
-    for var(i=0;i<amount;i++){
+    for (var i=0;i<amount;i++){
         
         var currentBox = dispboxes[i];
         var angle = (i+1)/amount*2*Math.PI;
