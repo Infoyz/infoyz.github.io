@@ -5,24 +5,24 @@
 
 function newBox(type,content){
 
-var box = document.createElement("div");
-document.body.appendChild(box);
-box.className = "display-boxes";
+    var box = document.createElement("div");
+    document.body.appendChild(box);
+    box.className = "display-boxes";
 
-if(type == 'math'){
-    
-    box.innerHTML = '<div class="vertDiv"><span class="vertSpan" style="font-size:40px;">'+content+'</span></div>';
-    
-    if(box.children[0].children[0].style.width.slice(0,-2>172){
-        var wideSpan = box.children[0].children[0];
-        while(wideSpan.style.width.slice(0,-2)>172){
-         
-            console.log(wideSpan.style.fontSize);
-            wideSpan.style.fontSize = (wideSpan.style.fontSize.slic(0,-2))*3/4;
-            
+    if(type == 'math'){
+
+        box.innerHTML = '<div class="vertDiv"><span class="vertSpan" style="font-size:40px;">'+content+'</span></div>';
+
+        if(box.children[0].children[0].style.width.slice(0,-2>172){
+            var wideSpan = box.children[0].children[0];
+            while(wideSpan.style.width.slice(0,-2)>172){
+
+                console.log(wideSpan.style.fontSize);
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slic(0,-2))*3/4;
+
+            }
         }
     }
-    
 }
 
 
