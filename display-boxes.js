@@ -41,7 +41,7 @@ function updatePositions(){
     for (var i=0;i<amount;i++){
         
         var currentBox = dispboxes[i];
-        var angle = (i+1)/amount*2*Math.PI;
+        var angle = (amount/(i+1))*2*Math.PI;
         
         var firstX = Math.cos(angle)*sWidth+middleX;
         var firstY = Math.sin(angle)*sHeight+middleY;
