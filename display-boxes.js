@@ -43,14 +43,14 @@ function updatePositions(){
         var currentBox = dispboxes[i];
         var angle = (i+1)/amount*2*Math.PI;
         
-        var firstX = wWidth/2+(Math.cos(angle)*sWidth+middleX)/2;
-        var firstY = (wHeight-hHeight)/2+(Math.sin(angle)*sHeight+middleY)/2+hHeight/2;
+        var firstX = wWidth/2+Math.cos(angle)*sWidth/2;
+        var firstY = hHeight+(wHeight-hHeight)/2+Math.sin(angle)*sHeight/2;
         
         var secondX = wWidth/2+(Math.cos(angle)*wWidth)/2;
-        var secondY = (wHeight-hHeight)/2+(Math.sin(angle)*(wHeight-hHeight)+hHeight)/2+hHeight/2;
+        var secondY = hHeight+(wHeight-hHeight)/2+Math.sin(angle)*(wHeight-hHeight)/2;
         
-        currentBox.style.top = 0-144+(firstY+secondY)/2 + 'px';
-        currentBox.style.left = 0-144+(firstX+secondX)/2 + 'px';
+        currentBox.style.top = -96+(firstY+secondY)/2 + 'px';
+        currentBox.style.left = -96+(firstX+secondX)/2 + 'px';
         
     }
     
