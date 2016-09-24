@@ -13,6 +13,16 @@ if(type == 'math'){
     
     box.innerHTML = '<div class="vertDiv"><span class="vertSpan" style="font-size:40px;">'+content+'</span></div>';
     
+    if(box.children[0].children[0].style.width>172){
+        var wideSpan = box.children[0].children[0];
+        while(wideSpan.style.width>172){
+         
+            console.log(wideSpan.style.fontSize);
+            wideSpan.style.fontSize = wideSpan.style.fontSize*3/4;
+            
+        }
+    }
+    
 }
 
 
