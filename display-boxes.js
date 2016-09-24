@@ -49,8 +49,8 @@ function updatePositions(){
         var secondX = Math.cos(angle)*wWidth;
         var secondY = Math.sin(angle)*(wHeight-hHeight)+hHeight;
         
-        currentBox.style.top = (firstY+secondY)/2;
-        currentBox.style.left = (firstX+secondX)/2;
+        currentBox.style.top = (firstY+secondY)/2 + 'px';
+        currentBox.style.left = (firstX+secondX)/2 + 'px';
         
     }
     
