@@ -43,7 +43,7 @@ BACKGROUND/ SECONDARY THME COLORS:
 }
 .display-boxes{
   position: absolute;
-  width: 320px;
+  width: 180px;
   height: 180px;
   border: solid 2px "+ main +";
   background-color: #FFFFFF;
