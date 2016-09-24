@@ -13,17 +13,16 @@ function newBox(type,content){
 
         box.innerHTML = '<div class="vertDiv"><span class="vertSpan" style="font-size:40px;">'+content+'</span></div>';
 
-        if(box.children[0].children[0].style.width.slice(0,-2>172){
+        if(box.children[0].children[0].style.width.slice(0,-2)>172){
             var wideSpan = box.children[0].children[0];
             while(wideSpan.style.width.slice(0,-2)>172){
 
                 console.log(wideSpan.style.fontSize);
-                wideSpan.style.fontSize = (wideSpan.style.fontSize.slic(0,-2))*3/4;
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4;
 
             }
         }
     }
-}
 
 
 updatePositions();
