@@ -18,7 +18,7 @@ function newBox(type,content){
             while(wideSpan.offsetWidth>172){
 
                 console.log(wideSpan.style.fontSize);
-                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4;
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
 
             }
         }
