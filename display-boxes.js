@@ -43,10 +43,10 @@ function updatePositions(){
         var currentBox = dispboxes[i];
         var angle = (i+1)/amount*2*Math.PI;
         
-        var firstX = Math.cos(angle)*sWidth+middleX;
+        var firstX = wWidth/2+(Math.cos(angle)*sWidth+middleX)/2;
         var firstY = Math.sin(angle)*sHeight+middleY;
         
-        var secondX = Math.cos(angle)*wWidth;
+        var secondX = wWidth/2+(Math.cos(angle)*wWidth)/2;
         var secondY = Math.sin(angle)*(wHeight-hHeight)+hHeight;
         
         currentBox.style.top = 0-96+(firstY+secondY)/2 + 'px';
