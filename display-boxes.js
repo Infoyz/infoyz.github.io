@@ -55,8 +55,8 @@ function updatePositions(){
     }
     
     if(amount>6){
-        while(dispboxes[5]) {
-            dispboxes[5].parentNode.removeChild(dispboxes[5]);
+        while(dispboxes[6]) {
+            dispboxes[6].parentNode.removeChild(dispboxes[6]);
         }   
     }
     
