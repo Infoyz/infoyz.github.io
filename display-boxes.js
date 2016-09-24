@@ -11,7 +11,7 @@ box.className = "display-boxes";
 
 if(type == 'math'){
     
-    box.innerHTML = '<div class="vertDiv"><span class="vertSpan" style="font-size:60px;">'+content+'</span></div>';
+    box.innerHTML = '<div class="vertDiv"><span class="vertSpan" style="font-size:40px;">'+content+'</span></div>';
     
 }
 
