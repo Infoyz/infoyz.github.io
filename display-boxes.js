@@ -34,8 +34,6 @@ function updatePositions(){
     var sHeight = searchId.offsetHeight;
     var hHeight = document.getElementById("page-header").offsetHeight;
     
-    var verticalSpacing = (wHeight-hHeight-sHeight)/2;
-    var horizontalSpacing = (wWidth-sWidth)/2;
     var middleX = (wWidth/2)-(sWidth/2);
     var middleY = ((((wHeight-hHeight)/2)-(sHeight/2))+hHeight);
 
@@ -44,6 +42,15 @@ function updatePositions(){
         
         var currentBox = dispboxes[i];
         var angle = (i+1)/amount*2*Math.PI;
+        
+        var firstX = Math.cos(angle)*sWidth+middleX;
+        var firstY = Math.sin(angle)*sHeight+middleY;
+        
+        var secondX = Math.cos(angle)*wWidth;
+        var secondY = Math.sin(angle)*(wHeight-hHeight)+hHeight;
+        
+        currentBox.style.top = (firstY+secondY)/2;
+        currentBox.style.left = (firstX+secondX)/2;
         
     }
     
