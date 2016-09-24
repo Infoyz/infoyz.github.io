@@ -58,7 +58,24 @@ function updatePositions(){
         while(amount>6) {
             dispboxes[0].parentNode.removeChild(dispboxes[0]);
             amount = dispboxes.length;
-        }   
+        }
+        
+        for (var i=0;i<amount;i++){
+        
+        var currentBox = dispboxes[i];
+        var angle = (i+1)/amount*2*Math.PI+(Math.PI/2);
+        
+        var firstX = wWidth/2+Math.cos(angle)*sWidth/2;
+        var firstY = hHeight+(wHeight-hHeight)/2+Math.sin(angle)*sHeight/2;
+        
+        var secondX = wWidth/2+(Math.cos(angle)*wWidth)/2;
+        var secondY = hHeight+(wHeight-hHeight)/2+Math.sin(angle)*(wHeight-hHeight)/2;
+        
+        currentBox.style.top = -96+(firstY+secondY)/2 + 'px';
+        currentBox.style.left = -96+(firstX+secondX)/2 + 'px';
+        
+    }
+        
     }
     
 }
