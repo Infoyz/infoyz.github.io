@@ -57,9 +57,17 @@ BACKGROUND/ SECONDARY THME COLORS:
   width: 172px;
   line-height: 172px;
   text-align: center;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 .vertSpan{
   display: inline-block;
   vertical-align: middle;
-  line-height: normal;    
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
