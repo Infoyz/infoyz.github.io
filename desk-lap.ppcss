@@ -43,11 +43,11 @@ BACKGROUND/ SECONDARY THME COLORS:
 }
 .display-boxes{
   position: absolute;
-  width: 480px;
-  height: 240px;
+  width: 320px;
+  height: 180px;
   border: solid 2px "+ main +";
   background-color: #FFFFFF;
-  border-radius: 15 px;
+  border-radius: 15px;
   font-family: 'Roboto', sans-serif;
   margin: 0px;
   padding: 4px;
