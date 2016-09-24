@@ -45,7 +45,7 @@ BACKGROUND/ SECONDARY THME COLORS:
   position: absolute;
   width: 480px;
   height: 240px;
-  border solid 2px "+ main +";
+  border: solid 2px "+ main +";
   background-color: #FFFFFF;
   border-radius: 15 px;
   font-family: 'Roboto', sans-serif;
