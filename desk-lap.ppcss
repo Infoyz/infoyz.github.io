@@ -52,3 +52,14 @@ BACKGROUND/ SECONDARY THME COLORS:
   margin: 0px;
   padding: 4px;
 }
+.vertDiv{
+  height: 172px;
+  width: 172px;
+  line-height: 172px;
+  text-align: center;
+}
+.vertSpan{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;    
+}
