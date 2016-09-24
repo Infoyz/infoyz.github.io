@@ -13,9 +13,9 @@ function newBox(type,content){
 
         box.innerHTML = '<div class="vertDiv"><span class="vertSpan" style="font-size:40px;">'+content+'</span></div>';
 
-        if(box.children[0].children[0].style.offsetWidth>172){
+        if(box.children[0].children[0].offsetWidth>172){
             var wideSpan = box.children[0].children[0];
-            while(wideSpan.style.offsetWidth>172){
+            while(wideSpan.offsetWidth>172){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4;
