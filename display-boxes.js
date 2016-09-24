@@ -41,7 +41,7 @@ function updatePositions(){
     for (var i=0;i<amount;i++){
         
         var currentBox = dispboxes[i];
-        var angle = (i+1)/amount*2*Math.PI;
+        var angle = (i+1)/amount*2*Math.PI+(Math.PI/2);
         
         var firstX = wWidth/2+Math.cos(angle)*sWidth/2;
         var firstY = hHeight+(wHeight-hHeight)/2+Math.sin(angle)*sHeight/2;
@@ -52,6 +52,12 @@ function updatePositions(){
         currentBox.style.top = -96+(firstY+secondY)/2 + 'px';
         currentBox.style.left = -96+(firstX+secondX)/2 + 'px';
         
+    }
+    
+    if(amount>6){
+        while(dispboxes[5]) {
+            dispboxes[5].parentNode.removeChild(dispboxes[5]);
+        }   
     }
     
 }
