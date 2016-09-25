@@ -74,8 +74,8 @@ function newBox(type,content){
         
         
         
-        if(box.children[2].offsetWidth>172){
-            var wideSpan = box.children[2];
+        if(box.children[3].offsetWidth>172){
+            var wideSpan = box.children[3];
             while(wideSpan.offsetWidth>172){
 
                 console.log(wideSpan.style.fontSize);
@@ -83,8 +83,8 @@ function newBox(type,content){
 
             }
         }
-        if(box.children[2].offsetHeight>86){
-            var wideSpan = box.children[2];
+        if(box.children[3].offsetHeight>86){
+            var wideSpan = box.children[3];
             while(wideSpan.offsetHeight>86){
 
                 console.log(wideSpan.style.fontSize);
