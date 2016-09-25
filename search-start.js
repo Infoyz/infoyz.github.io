@@ -112,7 +112,7 @@ function processDictionary(){
   
       /*     WIKI SECTION     WIKIPEDIA SECTION        WIKI SECTION          */
       
-      if(!isMath){
+      if(!isMath&&!isDefine){
     
         var url = "https://crossorigin.me/https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch="+search+"";
 
