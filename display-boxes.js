@@ -18,7 +18,7 @@ function newBox(type,content){
             while(wideSpan.offsetWidth>172){
 
                 console.log(wideSpan.style.fontSize);
-                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*5/6+"px";
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
 
             }
         }
@@ -37,7 +37,7 @@ function newBox(type,content){
             while(wideSpan.scrollWidth>100){
 
                 console.log(wideSpan.style.fontSize);
-                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*5/6+"px";
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
 
             }
         }
@@ -46,7 +46,7 @@ function newBox(type,content){
             while(wideSpan.scrollHeight>86){
 
                 console.log(wideSpan.style.fontSize);
-                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*5/6+"px";
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
 
             }
         }
@@ -58,7 +58,7 @@ function newBox(type,content){
             while(wideSpan.scrollWidth>72){
 
                 console.log(wideSpan.style.fontSize);
-                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*5/6+"px";
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
 
             }
         }
@@ -67,7 +67,7 @@ function newBox(type,content){
             while(wideSpan.scrollHeight>86){
 
                 console.log(wideSpan.style.fontSize);
-                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*5/6+"px";
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
 
             }
         }
@@ -79,7 +79,7 @@ function newBox(type,content){
             while(wideSpan.scrollWidth>172){
 
                 console.log(wideSpan.style.fontSize);
-                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*5/6+"px";
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
 
             }
         }
@@ -88,7 +88,7 @@ function newBox(type,content){
             while(wideSpan.scrollHeight>120){
 
                 console.log(wideSpan.style.fontSize);
-                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*5/6+"px";
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
 
             }
         }
