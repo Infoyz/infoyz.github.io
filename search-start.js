@@ -2,7 +2,7 @@ window.addEventListener("load", init, false);
 
 var xmlHttp = null;
 
-
+var curSearch;
 
 
 
@@ -21,7 +21,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   
   function searchStart(search){
   
-  
+  curSearch = search;
   
   
   
@@ -89,15 +89,23 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
     xmlHttp.send( null );
 }
 
-function ProcessRequest() 
-{
-    if ( xmlHttp.readyState == 4 && xmlHttp.status == 200 ) 
-    {
+function ProcessRequest(){
+    
+    if ( xmlHttp.readyState == 4 && xmlHttp.status == 200 ){
         
-            var info = eval ( "(" + xmlHttp.responseText + ")" );
-            info = info[0];
-            console.log(info);
+        var info = eval ( "(" + xmlHttp.responseText + ")" );
+        info = info[0];
+        console.log(info);
+        
+        for(var i=0;i<info.length;i++){
             
+            var content = [curSearch,info[i].type,info[i].definition];
+            newBox('define',content);
+            
+        }
+        
+        
+        
     }
 }
   
