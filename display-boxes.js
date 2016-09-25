@@ -39,6 +39,17 @@ function newBox(type,content){
 
             }
         }
+        if(box.children[0].children[0].offsetHeight>86){
+            var wideSpan = box.children[0].children[0];
+            while(wideSpan.offsetHeight>86){
+
+                console.log(wideSpan.style.fontSize);
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
+
+            }
+        }
+        
+        
         
         if(box.children[0].children[1].offsetWidth>86){
             var wideSpan = box.children[0].children[1];
@@ -49,10 +60,30 @@ function newBox(type,content){
 
             }
         }
+        if(box.children[0].children[1].offsetHeight>86){
+            var wideSpan = box.children[0].children[1];
+            while(wideSpan.offsetHeight>86){
+
+                console.log(wideSpan.style.fontSize);
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
+
+            }
+        }
+        
+        
         
         if(box.children[1].children[0].offsetWidth>172){
             var wideSpan = box.children[1].children[0];
             while(wideSpan.offsetWidth>172){
+
+                console.log(wideSpan.style.fontSize);
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
+
+            }
+        }
+        if(box.children[1].children[0].offsetHeight>86){
+            var wideSpan = box.children[1].children[0];
+            while(wideSpan.offsetHeight>86){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
