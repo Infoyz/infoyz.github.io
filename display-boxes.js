@@ -96,7 +96,58 @@ function newBox(type,content){
         
         
     }
+    if(type == "wiki"){
+        
+        box.innerHTML = '<span class="defineSpan" style="height:50px;line-height:50px;font-size:40px;width:172px;color:'+main+'">'+content[0]+'</span><br /><span class="defineSpan" style="font-size:25px;height:122px">'+content[1]+'</span>';
+        
+        console.log(box.children);
+        
+        if(box.children[0].scrollWidth>172){
+            var wideSpan = box.children[0];
+            while(wideSpan.scrollWidth>172){
 
+                console.log(wideSpan.style.fontSize);
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
+
+            }
+        }
+        if(box.children[0].scrollHeight>50){
+            var wideSpan = box.children[0];
+            while(wideSpan.scrollHeight>50){
+
+                console.log(wideSpan.style.fontSize);
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
+
+            }
+        }
+        box.children[0].style.overflowY = 'hidden';
+        
+        if(box.children[2].scrollWidth>172){
+            var wideSpan = box.children[2];
+            while(wideSpan.scrollWidth>172){
+
+                console.log(wideSpan.style.fontSize);
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
+
+            }
+        }
+        if(box.children[2].scrollHeight>122){
+            var wideSpan = box.children[2];
+            while(wideSpan.scrollHeight>122){
+
+                console.log(wideSpan.style.fontSize);
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
+
+            }
+        }
+        box.children[2].style.overflowY = 'hidden';
+        
+    }
+    
+    
+    
+    
+    
 
 updatePositions();
 
