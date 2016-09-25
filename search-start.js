@@ -100,7 +100,7 @@ function ProcessRequest(){
         
         for(var i=0;i<info.length;i++){
             
-            var content = [word,info[i].type,info[i].definition];
+            var content = [word,info[i].type,info[i].defenition];
             newBox('define',content);
             
         }
