@@ -28,7 +28,7 @@ function newBox(type,content){
     }
     if(type == 'define'){
         
-        box.innerHTML = '<span class="vertSpan" style="font-size:40px;width:86px">'+content[0]+'</span><span class="vertSpan" style="font-size:30px;width:86px">'+content[1]+'</span><div class="vertDiv" style="height:86px"><span class="vertSpan" style="font-size:30px;height:86px">'+content[2]+'</span></div>';
+        box.innerHTML = '<span class="vertSpan" style="font-size:40px;width:86px">'+content[0]+'</span><span class="vertSpan" style="font-size:30px;width:86px">'+content[1]+'</span><br /><span class="vertSpan" style="font-size:25px;height:86px">'+content[2]+'</span>';
         
         console.log(box.children);
         
@@ -74,8 +74,8 @@ function newBox(type,content){
         
         
         
-        if(box.children[2].children[0].offsetWidth>172){
-            var wideSpan = box.children[2].children[0];
+        if(box.children[2].offsetWidth>172){
+            var wideSpan = box.children[2];
             while(wideSpan.offsetWidth>172){
 
                 console.log(wideSpan.style.fontSize);
@@ -83,8 +83,8 @@ function newBox(type,content){
 
             }
         }
-        if(box.children[2].children[0].offsetHeight>86){
-            var wideSpan = box.children[2].children[0];
+        if(box.children[2].offsetHeight>86){
+            var wideSpan = box.children[2];
             while(wideSpan.offsetHeight>86){
 
                 console.log(wideSpan.style.fontSize);
