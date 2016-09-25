@@ -28,7 +28,7 @@ function newBox(type,content){
     }
     if(type == 'define'){
         
-        box.innerHTML = '<span class="defineSpan" style="font-size:40px;width:100px;color:'+main+'">'+content[0]+'</span><span class="defineSpan" style="font-size:30px;width:72px">'+content[1]+'</span><br /><span class="defineSpan" style="font-size:25px;height:120px">'+content[2]+'</span>';
+        box.innerHTML = '<span class="defineSpan" style="height:50px;line-height:50px;font-size:40px;width:100px;color:'+main+'">'+content[0]+'</span><span class="defineSpan" style="height:50px;line-height:50px;font-size:30px;width:72px">'+content[1]+'</span><br /><span class="defineSpan" style="font-size:25px;height:122px">'+content[2]+'</span>';
         
         console.log(box.children);
         
@@ -41,9 +41,9 @@ function newBox(type,content){
 
             }
         }
-        if(box.children[0].scrollHeight>86){
+        if(box.children[0].scrollHeight>50){
             var wideSpan = box.children[0];
-            while(wideSpan.scrollHeight>86){
+            while(wideSpan.scrollHeight>50){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
@@ -62,9 +62,9 @@ function newBox(type,content){
 
             }
         }
-        if(box.children[1].scrollHeight>86){
+        if(box.children[1].scrollHeight>50){
             var wideSpan = box.children[1];
-            while(wideSpan.scrollHeight>86){
+            while(wideSpan.scrollHeight>50){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
@@ -83,9 +83,9 @@ function newBox(type,content){
 
             }
         }
-        if(box.children[3].scrollHeight>120){
+        if(box.children[3].scrollHeight>122){
             var wideSpan = box.children[3];
-            while(wideSpan.scrollHeight>120){
+            while(wideSpan.scrollHeight>122){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*9/10+"px";
