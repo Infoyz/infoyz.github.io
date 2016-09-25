@@ -130,7 +130,7 @@ function processDictionary(){
         console.log(query);
         query = query.query.search;
         
-        for(var i=0;i<query.length&&query<4;i++){
+        for(var i=0;i<query.length&&i<4;i++){
             
             var content = [query[i].title,query[i].snippet];
             newBox('wiki',content);
