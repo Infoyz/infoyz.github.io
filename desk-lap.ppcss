@@ -71,3 +71,13 @@ BACKGROUND/ SECONDARY THME COLORS:
   padding: 0;
   margin: 0;
 }
+.defineSpan{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+}
