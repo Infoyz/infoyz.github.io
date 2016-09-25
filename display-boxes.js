@@ -28,13 +28,13 @@ function newBox(type,content){
     }
     if(type == 'define'){
         
-        box.innerHTML = '<span class="defineSpan" style="font-size:40px;width:86px">'+content[0]+'</span><span class="defineSpan" style="font-size:30px;width:86px">'+content[1]+'</span><br /><span class="defineSpan" style="font-size:25px;height:86px">'+content[2]+'</span>';
+        box.innerHTML = '<span class="defineSpan" style="font-size:40px;width:100px">'+content[0]+'</span><span class="defineSpan" style="font-size:30px;width:72px">'+content[1]+'</span><br /><span class="defineSpan" style="font-size:25px;height:120px">'+content[2]+'</span>';
         
         console.log(box.children);
         
-        if(box.children[0].scrollWidth>86){
+        if(box.children[0].scrollWidth>100){
             var wideSpan = box.children[0];
-            while(wideSpan.scrollWidth>86){
+            while(wideSpan.scrollWidth>100){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
@@ -53,9 +53,9 @@ function newBox(type,content){
         box.children[0].style.overflowY = 'hidden';
         
         
-        if(box.children[1].scrollWidth>86){
+        if(box.children[1].scrollWidth>72){
             var wideSpan = box.children[1];
-            while(wideSpan.scrollWidth>86){
+            while(wideSpan.scrollWidth>72){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
@@ -83,9 +83,9 @@ function newBox(type,content){
 
             }
         }
-        if(box.children[3].scrollHeight>86){
+        if(box.children[3].scrollHeight>120){
             var wideSpan = box.children[3];
-            while(wideSpan.scrollHeight>86){
+            while(wideSpan.scrollHeight>120){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
