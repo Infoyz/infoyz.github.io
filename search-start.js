@@ -2,7 +2,7 @@ window.addEventListener("load", init, false);
 
 var xmlHttp = null;
 
-var curSearch;
+var word;
 
 
 
@@ -87,6 +87,8 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
     xmlHttp.onreadystatechange = ProcessRequest;
     xmlHttp.open( "GET", url, true );
     xmlHttp.send( null );
+    
+    word = define;
 }
 
 function ProcessRequest(){
@@ -94,12 +96,11 @@ function ProcessRequest(){
     if ( xmlHttp.readyState == 4 && xmlHttp.status == 200 ){
         
         var info = eval ( "(" + xmlHttp.responseText + ")" );
-        info = info[0];
         console.log(info);
         
         for(var i=0;i<info.length;i++){
             
-            var content = [curSearch,info[i].type,info[i].definition];
+            var content = [word,info[i].type,info[i].definition];
             newBox('define',content);
             
         }
