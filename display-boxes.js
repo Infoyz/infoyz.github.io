@@ -53,8 +53,8 @@ function newBox(type,content){
         
         
         
-        if(box.children[0].children[1].offsetWidth>86){
-            var wideSpan = box.children[0].children[1];
+        if(box.children[1].offsetWidth>86){
+            var wideSpan = box.children[1];
             while(wideSpan.offsetWidth>86){
 
                 console.log(wideSpan.style.fontSize);
@@ -62,8 +62,8 @@ function newBox(type,content){
 
             }
         }
-        if(box.children[0].children[1].offsetHeight>86){
-            var wideSpan = box.children[0].children[1];
+        if(box.children[1].offsetHeight>86){
+            var wideSpan = box.children[1];
             while(wideSpan.offsetHeight>86){
 
                 console.log(wideSpan.style.fontSize);
@@ -74,8 +74,8 @@ function newBox(type,content){
         
         
         
-        if(box.children[1].children[0].offsetWidth>172){
-            var wideSpan = box.children[1].children[0];
+        if(box.children[2].children[0].offsetWidth>172){
+            var wideSpan = box.children[2].children[0];
             while(wideSpan.offsetWidth>172){
 
                 console.log(wideSpan.style.fontSize);
@@ -83,8 +83,8 @@ function newBox(type,content){
 
             }
         }
-        if(box.children[1].children[0].offsetHeight>86){
-            var wideSpan = box.children[1].children[0];
+        if(box.children[2].children[0].offsetHeight>86){
+            var wideSpan = box.children[2].children[0];
             while(wideSpan.offsetHeight>86){
 
                 console.log(wideSpan.style.fontSize);
