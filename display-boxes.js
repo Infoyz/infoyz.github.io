@@ -28,7 +28,7 @@ function newBox(type,content){
     }
     if(type == 'define'){
         
-        box.innerHTML = '<span class="vertSpan" style="font-size:40px;width:86px">'+content[0]+'</span><span class="vertSpan" style="font-size:30px;width:86px">'+content[1]+'</span><br /><span class="vertSpan" style="font-size:25px;height:86px">'+content[2]+'</span>';
+        box.innerHTML = '<span class="defineSpan" style="font-size:40px;width:86px">'+content[0]+'</span><span class="defineSpan" style="font-size:30px;width:86px">'+content[1]+'</span><br /><span class="defineSpan" style="font-size:25px;height:86px">'+content[2]+'</span>';
         
         console.log(box.children);
         
