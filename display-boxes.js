@@ -32,67 +32,67 @@ function newBox(type,content){
         
         console.log(box.children);
         
-        if(box.children[0].offsetWidth>86){
+        if(box.children[0].scrollWidth>86){
             var wideSpan = box.children[0];
-            while(wideSpan.offsetWidth>86){
+            while(wideSpan.scrollWidth>86){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
 
             }
         }
-        if(box.children[0].offsetHeight>86){
+        if(box.children[0].scrollHeight>86){
             var wideSpan = box.children[0];
-            while(wideSpan.offsetHeight>86){
+            while(wideSpan.scrollHeight>86){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
 
             }
         }
+        box.children[0].style.overflowY = 'hidden';
         
         
-        
-        if(box.children[1].offsetWidth>86){
+        if(box.children[1].scrollWidth>86){
             var wideSpan = box.children[1];
-            while(wideSpan.offsetWidth>86){
+            while(wideSpan.scrollWidth>86){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
 
             }
         }
-        if(box.children[1].offsetHeight>86){
+        if(box.children[1].scrollHeight>86){
             var wideSpan = box.children[1];
-            while(wideSpan.offsetHeight>86){
+            while(wideSpan.scrollHeight>86){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
 
             }
         }
+        box.children[1].style.overflowY = 'hidden';
         
         
-        
-        if(box.children[3].offsetWidth>172){
+        if(box.children[3].scrollWidth>172){
             var wideSpan = box.children[3];
-            while(wideSpan.offsetWidth>172){
+            while(wideSpan.scrollWidth>172){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
 
             }
         }
-        if(box.children[3].offsetHeight>86){
+        if(box.children[3].scrollHeight>86){
             var wideSpan = box.children[3];
-            while(wideSpan.offsetHeight>86){
+            while(wideSpan.scrollHeight>86){
 
                 console.log(wideSpan.style.fontSize);
                 wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
 
             }
         }
-        
+        box.children[3].style.overflowY = 'hidden';
         
         
     }
