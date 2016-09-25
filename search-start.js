@@ -79,19 +79,18 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   }
   
   
-  function dictionaryJSON(define)
-{
+  function dictionaryJSON(define){
     var url = "https://crossorigin.me/https://owlbot.info/api/v1/dictionary/"+define+"?format=json";
 
     xmlHttp = new XMLHttpRequest(); 
-    xmlHttp.onreadystatechange = ProcessRequest;
+    xmlHttp.onreadystatechange = processDictionary;
     xmlHttp.open( "GET", url, true );
     xmlHttp.send( null );
     
     word = define;
 }
 
-function ProcessRequest(){
+function processDictionary(){
     
     if ( xmlHttp.readyState == 4 && xmlHttp.status == 200 ){
         
@@ -111,12 +110,42 @@ function ProcessRequest(){
 }
   
   
-  
-  
-  
-  
-  
-  
+      /*     WIKI SECTION     WIKIPEDIA SECTION        WIKI SECTION          */
+      
+      if(!isMath){
+    
+        var url = "https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch="+search+"";
+
+        xmlHttp = new XMLHttpRequest(); 
+        xmlHttp.onreadystatechange = processWiki;
+        xmlHttp.open( "GET", url, true );
+        xmlHttp.send( null );
+    
+}
+      function processWiki(){
+    
+    if ( xmlHttp.readyState == 4 && xmlHttp.status == 200 ){
+        
+        var query = eval ( "(" + xmlHttp.responseText + ")" );
+        console.log(query);
+        query = query.query.search;
+        
+        for(var i=0;i<info.length&&info<4;i++){
+            
+            var content = [query[i].title,query[i].snippet];
+            newBox('wiki',content);
+            
+        }
+        
+        
+        
+    }
+}
+      
+      
+      
+      
+      
   
   
   
