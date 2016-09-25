@@ -32,8 +32,8 @@ function newBox(type,content){
         
         console.log(box.children);
         
-        if(box.children[0].children[0].offsetWidth>86){
-            var wideSpan = box.children[0].children[0];
+        if(box.children[0].offsetWidth>86){
+            var wideSpan = box.children[0];
             while(wideSpan.offsetWidth>86){
 
                 console.log(wideSpan.style.fontSize);
@@ -41,8 +41,8 @@ function newBox(type,content){
 
             }
         }
-        if(box.children[0].children[0].offsetHeight>86){
-            var wideSpan = box.children[0].children[0];
+        if(box.children[0].offsetHeight>86){
+            var wideSpan = box.children[0];
             while(wideSpan.offsetHeight>86){
 
                 console.log(wideSpan.style.fontSize);
