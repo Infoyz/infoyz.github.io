@@ -22,6 +22,36 @@ function newBox(type,content){
 
             }
         }
+        
+        
+        
+    }
+    if(type == 'define'){
+        
+        box.innerHTML = '<div class="vertDiv" style="height:86px"><span class="vertSpan" style="font-size:40px">'+content[0]+'</span></div><div class="vertDiv" style="height:86px"><span class="vertSpan" style="font-size:30px">'+content[1]+'</span></div>
+        
+        if(box.children[0].children[0].offsetWidth>172){
+            var wideSpan = box.children[0].children[0];
+            while(wideSpan.offsetWidth>172){
+
+                console.log(wideSpan.style.fontSize);
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
+
+            }
+        }
+        
+        if(box.children[1].children[0].offsetWidth>172){
+            var wideSpan = box.children[1].children[0];
+            while(wideSpan.offsetWidth>172){
+
+                console.log(wideSpan.style.fontSize);
+                wideSpan.style.fontSize = (wideSpan.style.fontSize.slice(0,-2))*3/4+"px";
+
+            }
+        }
+        
+        
+        
     }
 
 
