@@ -28,7 +28,9 @@ function newBox(type,content){
     }
     if(type == 'define'){
         
-        box.innerHTML = '<div class="vertDiv" style="height:86px"><span class="vertSpan" style="font-size:40px;width:86px">'+content[0]+'</span><span class="vertSpan" style="font-size:30px;width:86px">'+content[1]+'</span></div><div class="vertDiv" style="height:86px"><span class="vertSpan" style="font-size:30px;height:86px">'+content[2]+'</span></div>';
+        box.innerHTML = '<span class="vertSpan" style="font-size:40px;width:86px">'+content[0]+'</span><span class="vertSpan" style="font-size:30px;width:86px">'+content[1]+'</span><div class="vertDiv" style="height:86px"><span class="vertSpan" style="font-size:30px;height:86px">'+content[2]+'</span></div>';
+        
+        console.log(box.children);
         
         if(box.children[0].children[0].offsetWidth>86){
             var wideSpan = box.children[0].children[0];
