@@ -101,7 +101,7 @@ function newBox(type,content){
         var toLink = content[0].replace(/ /g,'_');
         var link = 'https://en.wikipedia.org/wiki/'+toLink;
         
-        box.innerHTML = '<span class="defineSpan" style="height:50px;line-height:50px;font-size:40px;width:172px;color:'+main+'"><a href="'+link+'">'+content[0]+'</a></span><br /><span class="defineSpan" style="font-size:25px;height:122px">'+content[1]+'</span>';
+        box.innerHTML = '<span class="defineSpan" style="text-align:center;height:50px;line-height:50px;font-size:40px;width:172px;color:'+main+'"><a style="color:black" href="'+link+'">'+content[0]+'</a></span><br /><span class="defineSpan" style="font-size:25px;height:122px">'+content[1]+'</span>';
         
         console.log(box.children);
         
