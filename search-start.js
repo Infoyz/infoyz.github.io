@@ -26,7 +26,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   
   
   /*     MATH SECTION         MATH SECTION          MATH SECTION                   */
-  var isMath = /^[0-9.()*/+'sin''cos''asin''acos''tan''atan''sqrt'-]*$/.test(search);
+  var isMath = /^[0-9.|()*/+'sin''cos''asin''acos''tan''atan''sqrt'-]*$/.test(search);
   
   if(isMath){
   
