@@ -26,7 +26,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   
   
   /*     MATH SECTION         MATH SECTION          MATH SECTION                   */
-  var isMath = /^[0-9.|()*/+'sin''cos''asin''acos''tan''atan''sqrt'-]*$/.test(search);
+  var isMath = /^[0-9.()%*/+'sin''cos''asin''acos''tan''atan''sqrt''abs'-]*$/.test(search);
   
   if(isMath){
   
@@ -39,6 +39,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   math = math.replace(/cos/g,'Math.cos');
   math = math.replace(/tan/g,'Math.tan');
   math = math.replace(/sqrt/g,'Math.sqrt');
+  math = math.replace(/abs/g,'Math.abs');
   
   math = math.replace(/###/g,'Math.atan');
   math = math.replace(/##/g,'Math.acos');
