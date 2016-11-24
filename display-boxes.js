@@ -1,9 +1,4 @@
-var link = window.location.href;
-var linkSearch = link.substr(link.indexOf("?") + 1)
 
-if(linkSearch){
- searchStart(linkSearch);   
-}
 
 
 
@@ -232,4 +227,14 @@ while(dispboxes[0]) {
     dispboxes[0].parentNode.removeChild(dispboxes[0]);
 }
 
+}
+
+
+//                 LINK SEARCH         LINK SEARCH            LINK SEARCH
+
+var link = window.location.href;
+var linkSearch = link.substr(link.indexOf("?") + 1)
+
+if(linkSearch){
+ searchStart(linkSearch);   
 }
