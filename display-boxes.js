@@ -1,5 +1,9 @@
+var link = window.location.href;
+var linkSearch = link.substr(link.indexOf("?") + 1)
 
-
+if(linkSearch){
+ searchStart(linkSearch);   
+}
 
 
 
