@@ -234,6 +234,7 @@ while(dispboxes[0]) {
 
 var link = window.location.href;
 var linkSearch = link.substr(link.indexOf("?") + 1)
+linkSearch = linkSearch.replace(/%20/g, " ");
 
 if(linkSearch){
  searchStart(linkSearch);   
