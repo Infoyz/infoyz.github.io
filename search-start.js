@@ -1,7 +1,13 @@
 Math.factorial = function(a){
-    if(a<0){}
+    if(a<0){return NaN}
     if(a==0){return 1}
-    if(a>0){}
+    if(a>0){
+        var b = a
+        for(var i = 1;i<a;i++){
+            b = b*(b-i)
+        }
+        return b;
+    }
 }
 
 window.addEventListener("load", init, false);
@@ -32,7 +38,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   
   
   /*     MATH SECTION         MATH SECTION          MATH SECTION                   */
-  var isMath = /^[0-9.()%*/+'sin''cos''asin''acos''tan''atan''sqrt''abs''pi''E''ln''log10'-]*$/.test(search);
+  var isMath = /^[0-9.()%*/+!'sin''cos''asin''acos''tan''atan''sqrt''abs''pi''E''ln''log10'-]*$/.test(search);
   
   if(isMath){
   
@@ -50,6 +56,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   math = math.replace(/E/g,'Math.E');
   math = math.replace(/ln/g,'Math.log');
   math = math.replace(/log10/g,'Math.log10');
+  math = math.replace(/!/g,'Math.factorial');
   
   math = math.replace(/###/g,'Math.atan');
   math = math.replace(/##/g,'Math.acos');
