@@ -4,7 +4,7 @@ Math.factorial = function(a){
     if(a>0){
         var b = a
         for(var i = 1;i<a;i++){
-            b = b*(b-i)
+            b = b*(a-i)
         }
         return b;
     }
