@@ -9,6 +9,16 @@ Math.factorial = function(a){
         return b;
     }
 }
+Math.csc = function(a){
+ return 1/Math.sin(a);
+}
+Math.sec = function(a){
+ return 1/Math.cos(a);
+}
+Math.cot = function(a){
+ return 1/Math.tan(a);
+}
+
 
 window.addEventListener("load", init, false);
 
@@ -38,7 +48,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   
   
   /*     MATH SECTION         MATH SECTION          MATH SECTION                   */
-  var isMath = /^[0-9.()%*/+'sin''cos''asin''acos''tan''atan''sqrt''abs''pi''E''ln''log10''fac'-]*$/.test(search);
+  var isMath = /^[0-9.()%*/+'sin''cos''asin''acos''tan''atan''sqrt''abs''pi''E''ln''log10''fac''csc''sec''cot'-]*$/.test(search);
   
   if(isMath){
   
@@ -57,6 +67,9 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   math = math.replace(/ln/g,'Math.log');
   math = math.replace(/log10/g,'Math.log10');
   math = math.replace(/fac/g,'Math.factorial');
+  math = math.replace(/csc/g,'Math.csc');
+  math = math.replace(/sec/g,'Math.sec');
+  math = math.repalce(/cot/g,'Math.cot');
   
   math = math.replace(/###/g,'Math.atan');
   math = math.replace(/##/g,'Math.acos');
