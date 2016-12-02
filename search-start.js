@@ -69,7 +69,7 @@ document.getElementById('middle-page-search-bar').onkeypress = function(e){
   math = math.replace(/fac/g,'Math.factorial');
   math = math.replace(/csc/g,'Math.csc');
   math = math.replace(/sec/g,'Math.sec');
-  math = math.repalce(/cot/g,'Math.cot');
+  math = math.replace(/cot/g,'Math.cot');
   
   math = math.replace(/###/g,'Math.atan');
   math = math.replace(/##/g,'Math.acos');
